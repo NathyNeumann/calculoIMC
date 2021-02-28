@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela IMC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div id="barrinha"></div>
+    </header>
+    <main>
+        <div class="parte1 row">
+            <div class="col">
+                <div class="p">Calcule  </div><div class="p"> <span>seu</span>  <strong>IMC</strong> </div>
+            </div>
+            <div class="formulario col">
+                <form id="IdFormulario" action="" method="POST">
+                    <div class="form-group">
+
+                        <label for="idNome">Nome:</label>
+                        <input type="text" class="form-control" id="idNome" name="nmNome">
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="idIdade">Idade:</label>
+                            <input type="number" class="form-control" id="idIdade" name="nmIdade">
+                        </div>
+                        <div class="col">
+                            <label for="idAltura">Altura:</label>
+                            <input type="numer" class="form-control" id="idAltura" name="nmAltura">
+                        </div>
+                        <div class="col">
+                            <label for="idPeso">Peso:</label>
+                            <input type="number" class="form-control" id="idPeso" name="nmPeso">
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-secondary btn-lg" value="Incluir">
+                </form>
+            </div>
+        </div class="row">
+        <section>
+            <table class="table" id="idTbImc">
+                <thead class="table-dark">
+                    <tr class="linhaCabecalho">
+                        <th scope="col" class="text-center">Nome</th>
+                        <th scope="col" class="text-center" >Idade</th>
+                        <th scope="col" class="text-center">Altura</th>
+                        <th scope="col" class="text-center">Peso</th>
+                        <th scope="col" class="text-center">IMC</th>
+
+                        </th>
+                </thead>
+                <tbody id="idtablebody">
+                    <tr class="linhaDados">
+                        <td class="campoNome text-center">Nathy</td>
+                        <td class="campoIdade text-center">33</td>
+                        <td class="campoAltura text-center">1.82</td>
+                        <td class="campoPeso text-center">74</td>
+                        <td class="campoIMC text-center">000</td>
+                    </tr>
+                    <tr class="linhaDados">
+                        <td class="campoNome text-center">João</td>
+                        <td class="campoIdade text-center">43</td>
+                        <td class="campoAltura text-center">1.72</td>
+                        <td class="campoPeso text-center">94</td>
+                        <td class="campoIMC text-center">000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <br><br>
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
